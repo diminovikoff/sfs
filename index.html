@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFS Security</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="section1">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="/index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Home</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#section2">Über uns</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#section3">Leistungen</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#section4">Kontakte</a>
+              </li>
+            </ul>
+          </nav>
+
+
+
+          <a class="phone" href="tel:+4908974864099">+49 (089) 74864099
+             <p class="phone__callus">Rufen Sie uns an!</p>
+          </a>
+         
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+      <main class="main">
+
+        <section class="top">
+          <img class="smoke-main" src="images/Smoke first screen.png" alt="">  
+
+          <div class="top__inner">
+            <div class="container">
+              <div class="top__offer">
+                <!-- <p class="top__offer-city">
+                  München und Oberbayern
+                </p> -->
+                <h2 class="top__offer-title">
+                  <span class="top__maincolor">SFS Sicherheit</span>
+                  <p>die richtige</p> 
+                  <p>Entscheidung</p>
+                </h2>
+                <p class="top__offer-title-text">
+                  Informieren Sie sich und erfahren Sie mehr über<br>
+                  unser <b>Spektrum</b> in den Bereichen <b>Schutz & Sicherheit!</b>
+                </p>
+
+              </div>
+              <a href="#section4"><button class="button">Beratung</button></a>
+              <a href="#section2"><button class="button_about">Wer sind wir</button></a>
+
+            
+            </div>
+
+          </div>
+
+  </div>
+  </div>
+  </div>
+
+  </main>
+
+  </section>
+
+  </header>
+
+
+  <section class="about" id="section2">
+    <div class="container">
+      <div class="about__items">
+        <div class="about__item-agent">
+          <img class="about__item-img" src="images/agent.png" alt="">
+        </div>
+        <div class="about__item-about">
+          <h4 class="about__us">
+            WER SIND WIR?
+          </h4>
+          <span class="about__line"></span>
+
+
+          <p class="about__text">
+            Als erfahrener Partner in allen relevanten Sicherheitsfragen begrüsen wir Sie auf unserer Internetpräsenz.
+            Informieren Sie sich und erfahren Sie mehr über unser Spektrum in den Bereichen Schutz & Sicherheit.
+            Profitieren Sie von unserer mehrjährigen Erfahrung mit erstklassigen Leistungen auf höchstem Niveau, wenn es
+            um Ihre Sicherheit geht.
+          </p>
+      
+          <a href="#section3"> <button class="button">Leistungen</button></a>
+          
+        </div>
+        <img class="about__camera" src="images/camera.png" alt="">  
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <img class="smoke-second" src="images/Smoke second screen.png" alt="">  
+
+
+  <section class="services" id="section3">
+    <div class="container">
+      <h3 class="services__title">Unsere Dienstleistungen</h3>
+      <h6 class="services__sub-title">Wählen Sie eine Leistung</h6>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Set trigger and container variables
+          var trigger = $('.servicesCLASS a'),
+              container = $('.services__inner');
+              
+          
+          // Fire on click
+          trigger.on('click', function(){
+            // Set $this for re-use. Set target from data attribute
+            var $this = $(this),
+              target = $this.data('target');       
+            
+            // Load target page into container
+            container.load(target + '.html');
+            
+            // Stop normal link behavior
+            return false;
+          });
+
+        });
+        function myFunction() {
+  document.getElementsByClassName(".services__inner").style.transitionDuration = "1s";
+}      
+</script>
+
+<!-- <div id="servicesID">
+        <ol class="services__list">       
+          <li class="services__item"><a href="#" data-target="objektschutz"><p class="services__item-title">Werk und Objektschutz</p></a></li>
+          <li class="services__item"><a href="#" data-target="revierdienst"><p class="services__item-title">Revierdienst</p></a></li>
+          <li class="services__item"><a href="#" data-target="baustellenbewachung"><p class="services__item-title">Baustellenbewachung</p></a></li>
+      </ol>
+    </div> -->
+    <div id="servicesID">
+<div class="servicesCLASS">
+<div class="services__list">
+  <a href="#" data-target="objektschutz" class="services__item active"><p class="services__item-title">Werk und Objektschutz</p></a>
+  <a href="#" data-target="revierdienst" class="services__item"><p class="services__item-title">Revierdienst</p></a>
+  <a href="#" data-target="baustellenbewachung" class="services__item"><p class="services__item-title">Baustellenbewachung</p></a>
+</div>
+</div>
+</div>
+
+      <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("servicesID");
+      var btns = header.getElementsByClassName("services__item");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      </script>
+        <div class="services__inner">
+        <div class="services__content">
+          <div class="services__content-text-box">
+            <h4 class="services__content-title">Werk und Objektschutz</h4>
+            <p class="services__content-text">
+              Der Objekt und Werkschutz der SFS entwickelt mit Ihnen eine Sicherheits-
+              Analyse damit wir das Passende für Ihr Unternehmen aussuchen können. In Unserem Objektschutz bieten wir
+              folgende Punkte an:
+              <br><br>
+              </p>
+            <p class="services__content-text-sub">
+    <ul class="punkts">
+      <li class="services__punkt">Werkschutz</li>
+      <li class="services__punkt">Sicherheitsdienst</li>
+      <li class="services__punkt">Empfangs und Pforten Dienst</li>
+      <li class="services__punkt">Veranstaltungen und Sonderdienst</li>
+    </ul>
+    <br>
+            </p>
+            Zur verfügung ausser den Objektschutz bietet der SFS(Sicherheits für Sie) auch service und
+            Dienstleistungen für ihren Altag an. Dazu passend stellt Ihnen Unser Unternehmen
+            alles nötige um eine reibungslose Sicherheits und Dienstleistungs verhältnis bei zu behalten. Folgende
+            Tätigkeiten können wir für Sie Übernehmen:
+            <br><br>
+            <p class="services__content-text-sub">
+              <ul class="punkts">
+                <li>Zutrittskontrollen und Einfahrtskontrollen</li>
+                <li>Kontrollgänge</li>
+                <li>Ausweiserstellung, Schlüsselausgabe und Verwaltung</li>
+                <li>Interne Alarmverfolgung</li>
+                <li>Kurierdienste und Botendienste</li>
+                <li>Parkplatzbewachung</li>
+              </ul>
+            </p>   
+
+    </div>
+
+        </div>        
+     
+        <div class="services__content-images">
+          <img class="services__content-images-img" src="images/Rectangle 142.jpg" alt="">
+        </div> 
+
+      </div>     
+
+      </div>
+      
+  </section>
+  <div class="container">
+    <a href="#section4"><button class="button">Beratung</button></a>
+
+
+  <img class="smoke-third" src="images/Smoke third screen.png" alt="">  
+
+  
+  <section class="contacts" id="section4">
+
+    <img class="contacts__camera-medium" src="images/camera-medium.png" alt="">
+    <img class="contacts__camera-small" src="images/camera-small.png" alt="">
+
+   
+    <div class="container">
+
+      <div class="contacts__inner">
+        <div class="content">
+        <div class="contacts__content-first">
+          <h3 class="title contacts__title"> Kostenlose Beratung</h3>
+          <p class="contacts__service">Unser Service Nummern:</p>
+          <p class="contacts__number">+49 176 21312735</p>
+          <p class="contacts__number">+49 89 74864099</p>
+          <p class="contacts__fillup">Oder füllen Sie das Form ein und wir rufen Sie an!</p>
+          <p class="contacts__worktime">Arbeitszeiten: </p>
+          <p class="contacts__hours">Wir sind <b>24/7</b> für Sie da </p>
+          <p class="contacts__pause">(Ohne Mittagspause)</p>
+        </div>
+      </div>
+
+      <div class="allnight">
+        <p class="allnight__time">Auch am <br>Wochenende</p>
+      </div>
+
+<form class="contacts__form">
+  <input class="contacts__input" type="text" placeholder="Name">
+  <input class="contacts__input" type="text" placeholder="Handy">
+  <input class="contacts__input" type="text" placeholder="Email Adresse">
+  <input class="contacts__input" type="text" placeholder="Thema">
+  <textarea type="text" class="contacts__input-text textarea__input-text" type="text" placeholder="Ihre Nachricht / Frage"></textarea>
+  <p class="contacts__agreement">Bei der Sendung Sie sind einverstanden mit der Bearbeitung der Daten.</p>
+    
+  <button class="button" 
+  type="submit">Senden</button>
+</form>
+      </div>
+      </div>
+  </section>
+
+    <div class="footer__content">
+      <div class="container">
+        <span class="line"></span>
+        <div class="footer__inner">
+
+          <div class="footer__menu">
+            <a class="footer__logo" href="logo">
+              <img src="images/SFS SECURITY-logo-btn.png" alt="">
+            </a>
+            
+            <p class="footer__logo-disc">Ihr & Sicherheitspartner<br>
+              München und Oberbayern</p>
+            <div class="footer__subscribe-menu">
+              <ul class="footer__social">
+                <h4 class="footer__info-title">
+                  Folgen Sie uns
+                </h4>
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--facebook" href="">Facebook</a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--instagram" href="">Instagram</a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link footer__social-link--youtube" href="">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="footer__menu">
+            <h4 class="footer__info-title">
+              Navigation
+            </h4>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#section1">Home</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#section2">Über uns</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#section3">Leistungen</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#section4">Kontakte</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Impressum</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Datenschutz</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__contacts">
+            <h4 class="footer__info-title">
+              Kontakte
+            </h4>
+            <div class="footer__contact-details">
+              <p>Telefon: +49 89 74864099</p>
+              <p>Handy: +49 0176 2131273</p>
+              <p>E-Mail: info@sicherheitfs.de</p>
+            </div>
+
+          </div>
+
+          <div class="footer__adress">
+            <div class="footer__first-adress">
+              <h4 class="footer__info-title">
+                Filiale in München
+              </h4>
+              <div class="footer__adress-munchen">
+                <p>Klausnerring 15</p>
+                <p>85551 Kirchheim b. München</p>
+              </div>
+              <div class="footer__second-adress">
+                <h4 class="footer__info-title">
+                  Filiale in Oberbayern
+                </h4>
+                <div class="footer__adress-oberbayern">
+                  <p>Oberaign 9</p>
+                  <p>84558 Kirchweidach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <div class="container">
+        <span class="line"></span>
+        <div class="copyright">
+          <div class="copyright__SFS">
+        <span>&#169; ALL RIGHTS RESERVED <span class="copyright__sfscolor">SICHERHEIT FÜR SIE</span></span> 
+        </div>
+        <div class="copyright__designer">
+        <span>DESIGNED BY <span class="copyright__designercolor"><b>NOVIKOV</b></span></span>
+      </div>
+      </div>
+      </div>
+    </div>
+
+  </footer>
+  </div>
+
+  <script src="app/js/sc.js"></script>
+  <script src="app/js/libs.min.js"></script>
+  <script src="app/js/main.min.js"></script>
+</body>
+
+</html>
